@@ -1,7 +1,10 @@
 # VL6180s-ZYNQdrive
 由ZYNQ使用IIC驱动多个VL6180例程<br>
 所使用模块为：<br>
-![VL6180模块图片](picture/IMG_2154.JPG =600x)<br>
+<img src="picture/IMG_2154.JPG" align = “middle” width="210px"><br>
+模块图片，购买地址：https://m.tb.cn/h.geHgrO0uIaHkJ8t?tk=GXidWxXvhmA<br>
+测试接线图：<br>
+<img src="picture/VL6180设备组ZYNQ驱动测试-1.HEIC" align = “middle” width="210px"><br>
 VL6180模块本身是可以自定义设备地址的，但是由于其掉电后设备地址会自动恢复为默认的0x29，所以如何在上电后为串接在IIC总线上的多个VL6180分配独立地址是串接多个VL6180所需要解决的问题。<br>
 本例程通过上电后依次激活VL6180的GPIO1引脚，来逐个对VL6180的地址进行配置。（GPIO1引脚为传感器的关闭引脚，默认情况下它被拉高，当它被拉低时芯片停止工作）。<br>
 <br>
