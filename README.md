@@ -1,4 +1,4 @@
-# VL6180s-ZYNQdrive
+# VL6180X-ZYNQdrive
 由ZYNQ使用IIC驱动多个VL6180例程<br>
 所使用模块为：<br>
 <img src="picture/IMG_2154.JPG" width="210px"><br>
